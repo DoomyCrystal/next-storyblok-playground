@@ -10,11 +10,13 @@
     "create-component": "node ./generators/copy.js"
   },
   "dependencies": {
+    "@next/bundle-analyzer": "^13.0.6",
     "@storyblok/react": "^1.0.5",
     "axios": "^0.21.1",
     "next": "^12.1.5",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
+    "react-phone-number-input": "^3.2.13",
     "storyblok-rich-text-react-renderer": "^2.5.2"
   },
   "devDependencies": {

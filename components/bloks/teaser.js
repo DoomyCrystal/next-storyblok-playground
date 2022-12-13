@@ -1,6 +1,8 @@
 import React from 'react'
 import { storyblokEditable } from "@storyblok/react";
 import Image from 'next/image'
+import Link from 'next/link';
+import { formatPhoneNumber } from 'react-phone-number-input'
 
 const Teaser = ({blok}) => {
   return (
@@ -15,10 +17,13 @@ const Teaser = ({blok}) => {
           <h2 className="text-lg font-medium mb-6">
           You have successfully setup a Next.js project with Storyblok!
           </h2>
+          <p><a href="tel:+41319280010">{formatPhoneNumber('+41319280010')}</a></p>
           <div className="flex flex-col sm:block py-4">
-            <a target="_blank" href="https://www.storyblok.com/tc/nextjs" className="no-underline inline-block font-medium text-sm px-4 py-2 shadow uppercase rounded hover:shadow-md sm:mr-4 py-3 px-6 text-base mb-4 primary" rel="noreferrer">
-            Visit the Next.js Hub
-            </a>
+            <Link href={`/${blok.link.story.full_slug}`}>
+              <a className="no-underline inline-block font-medium shadow uppercase rounded hover:shadow-md sm:mr-4 py-3 px-6 text-base mb-4 primary bg-blue-200">
+                {blok.link.story.name}
+              </a>
+            </Link>
           </div>
         </div>
         <div className="hidden lg:block lg:w-5/12">
