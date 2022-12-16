@@ -4,6 +4,8 @@ import feature from "../components/bloks/feature";
 import teaser from "../components/bloks/teaser";
 import page from "../components/bloks/page";
 import grid from "../components/bloks/grid"
+import rich_text from "../components/bloks/rich_text"
+import rich_text_highlight from "../components/bloks/rich_text_highlight"
 
 storyblokInit({
   accessToken: process.env.STORYBLOK_TOKEN,
@@ -13,7 +15,9 @@ storyblokInit({
     page,
     teaser,
     feature,
-    grid
+    grid,
+    rich_text,
+    rich_text_highlight
   },
 });
 

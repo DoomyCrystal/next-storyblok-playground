@@ -17,6 +17,7 @@
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-phone-number-input": "^3.2.13",
+    "react-syntax-highlighter": "^15.5.0",
     "storyblok-rich-text-react-renderer": "^2.5.2"
   },
   "devDependencies": {
